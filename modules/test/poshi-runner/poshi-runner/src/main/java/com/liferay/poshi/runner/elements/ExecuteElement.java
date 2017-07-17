@@ -69,7 +69,7 @@ public class ExecuteElement extends PoshiElement {
 
 		List<String> assignments = new ArrayList<>();
 
-		Matcher matcher = _assignmentRegex.matcher(content);
+		Matcher matcher = _assignmentPattern.matcher(content);
 
 		while (matcher.find()) {
 			assignments.add(matcher.group());
@@ -161,7 +161,7 @@ public class ExecuteElement extends PoshiElement {
 		return attributeValue("macro");
 	}
 
-	private static final Pattern _assignmentRegex = Pattern.compile(
+	private static final Pattern _assignmentPattern = Pattern.compile(
 		"([^,]*? = \".*?\")");
 
 }
