@@ -338,6 +338,8 @@
 	</command>
 
 	<command name="RotateImageViaDMSiteAdmin" priority="4">
+		<property name="portal.acceptance" value="austin" />
+
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoSitesContent">
