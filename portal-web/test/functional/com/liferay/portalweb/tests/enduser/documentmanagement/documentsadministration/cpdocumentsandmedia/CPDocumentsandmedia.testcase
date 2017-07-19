@@ -361,7 +361,7 @@
 		<execute function="AssertVisible" locator1="Portlet#HEADER" value1="Documents and Media" />
 
 		<execute macro="ImageEditor#gotoImageEditorViaDM">
-			<var name="dmDocumentTitle" value="Document_2.jpeg" />
+			<var name="dmDocumentTitle" value="Document_2.jpg" />
 		</execute>
 
 		<execute macro="ImageEditor#rotateImage">
@@ -375,7 +375,7 @@
 		<execute macro="Navigator#openURL" />
 
 		<execute macro="ProductMenu#gotoSitesContent">
-			<var name="portletName" value="Documents and Media" />
+			<var name="portlet" value="Documents and Media" />
 		</execute>
 
 		<execute macro="DMNavigator#gotoDocumentCP">
@@ -383,7 +383,7 @@
 		</execute>
 
 		<execute macro="DMDocument#viewDocumentVersionNumberCmdPG">
-			<var name="dmDocumentVersionNumber" value="1.2" />
+			<var name="dmDocumentVersionNumber" value="1.1" />
 		</execute>
 	</command>
 
