@@ -49,6 +49,9 @@
 		<execute function="Click" locator1="DocumentsAndMedia#ICON_DOCUMENT_VERTICAL_ELLIPSIS" />
 
 		<execute function="AssertClick" locator1="MenuItem#EDIT_WITH_IMAGE_EDITOR" value1="Edit With Image Editor" />
+
+		<execute function="SelectFrame" locator1="ImageEditor#IMAGE_EDITOR_IFRAME" />
+
 	</command>
 
 	<command name="gotoImageEditorViaItemSelector">
